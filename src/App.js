@@ -15,7 +15,7 @@ function App() {
 //        setJustPick(data.justPick);
 //    }
     function handleChange(event) {
-        fetch('/justPick').then(res => res.json()).then(data => {
+        fetch("https://just-pick.herokuapp.com/justPick").then(res => res.json()).then(data => {
           setJustPick(data.justPick);
         })
       }
